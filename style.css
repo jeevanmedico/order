@@ -74,7 +74,7 @@
     }
 
     .product-card h3 {
-      margin: 10px 0;
+      margin: 100px 0;
       color: #333;
     }
 
@@ -207,3 +207,176 @@ body {
   height: 100vh; /* Set the body to take full viewport height */
 }
 
+header {
+  /* ... Your existing styles ... */
+  background-color: #4CAF50;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  position: fixed; /* Fix the header at the top */
+  width: 100%;
+  z-index: 999;
+}
+
+main {
+  padding-top: 80px; /* Adjust based on your header's height */
+  padding-bottom: 20px; /* Add space at the bottom for potential scrollbar */
+}
+
+.popup-container {
+  /* ... Your existing styles ... */
+  position: fixed; /* Ensure the popup remains fixed for visibility */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the popup */
+  overflow-y: auto; /* Enable vertical scrolling for the popup */
+  max-height: 80%; /* Adjust the maximum height of the popup */
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Light grey background */
+    color: #333; /* Dark text color */
+  }
+  
+  #mainHeader {
+    background-color: #FF3366; /* Bright pink color */
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 4px solid #FF9900; /* Orange border */
+    transition: background-color 0.3s ease;
+  }
+  
+  #mainHeader.scrolled {
+    background-color: #6600CC; /* Purple color on scroll */
+  }
+  
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 2px solid #FF9900; /* Orange border for navigation */
+  }
+  
+  .navigation h1 {
+    font-size: 24px;
+  }
+  
+  .navigation nav ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .navigation nav ul li {
+    margin-right: 20px;
+  }
+  
+  .navigation nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .navigation nav ul li a:hover {
+    color: #fff; /* Change color on hover */
+  }
+  
+  /* Rest of your existing styles remain unchanged */
+  .cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    top: 100px; /* Adjust to position the cart */
+    right: 20px; /* Adjust to position the cart */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    backdrop-filter: blur(5px); /* Apply backdrop blur */
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+  .popup-content {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .popup-content h2 {
+    font-size: 24px;
+  }
+  
+  .popup-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .popup-content input[type="text"],
+  .popup-content input[type="email"],
+  .popup-content input[type="tel"],
+  .popup-content button {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .popup-content button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .popup-content button:hover {
+    background-color: #0056b3;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  .navbar {
+    background-color: #222;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-list li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  .nav-list li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-list li a:hover {
+    background-color: #555;
+    color: #fff;
+    transform: scale(1.1);
+  }
+  
