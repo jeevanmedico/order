@@ -74,3 +74,12 @@
         alert("An error occurred while submitting the order. Please try again later.");
       });
     }
+function addToCart(name, price) {
+  cart.push({ name, price });
+  cartTotal += price;
+  document.getElementById('cartList').innerHTML += `<li>${name} - $${price}</li>`;
+  document.getElementById('cartTotal').textContent = cartTotal.toFixed(2);
+
+  // Show the cart after adding an item
+  document.getElementById('cartItems').style.display = 'block';
+}
