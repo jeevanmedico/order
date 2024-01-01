@@ -207,28 +207,3 @@ body {
   height: 100vh; /* Set the body to take full viewport height */
 }
 
-header {
-  /* ... Your existing styles ... */
-  background-color: #4CAF50;
-  padding: 20px;
-  text-align: center;
-  color: white;
-  position: fixed; /* Fix the header at the top */
-  width: 100%;
-  z-index: 999;
-}
-
-main {
-  padding-top: 80px; /* Adjust based on your header's height */
-  padding-bottom: 20px; /* Add space at the bottom for potential scrollbar */
-}
-
-.popup-container {
-  /* ... Your existing styles ... */
-  position: fixed; /* Ensure the popup remains fixed for visibility */
-  top: 50%; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Center the popup */
-  overflow-y: auto; /* Enable vertical scrolling for the popup */
-  max-height: 80%; /* Adjust the maximum height of the popup */
-}
