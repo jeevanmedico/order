@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Page Title</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <!-- Your HTML content goes here -->
+    <header>
+      <h1>Welcome to JEEVAN MEDICO</h1>
+      <button onclick="toggleCart()">View Cart</button>
+    </header>
+    
+    <main>
+      <div class="products">
+        <!-- Product cards -->
+        <div class="product-card" onclick="addToCart('Product 1', 19.99)">
+          <img src="product1.jpg" alt="Product 1">
+          <h3>Product 1</h3>
+          <p>Description of Product 1.</p>
+          <p>$19.99</p>
+          <button>Add to Cart</button>
+        </div>
+        <!-- Add more product cards here -->
+      </div>
+  
+      <!-- Cart display -->
+      <div class="cart" id="cartItems">
+        <h2>Your Cart</h2>
+        <ul id="cartList"></ul>
+        <p>Total: $<span id="cartTotal">0</span></p>
+        <button onclick="showUserInfoForm()">Place Order</button>
+      </div>
+  
+      <!-- User info form -->
+      <div class="popup-container" id="userInfoForm">
+        <div class="popup-content">
+          <h2>Enter Your Details</h2>
+          <form onsubmit="submitOrder(event)">
+            <input type="text" placeholder="Name" required><br>
+            <input type="email" placeholder="Email" required><br>
+            <input type="tel" placeholder="Phone Number" required><br>
+            <button type="submit">Submit Order</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
