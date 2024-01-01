@@ -8,28 +8,144 @@
     <!-- Your HTML content goes here -->
     <header>
       <h1>Welcome to JEEVAN MEDICO</h1>
-      <button onclick="toggleCart()">View Cart</button>
+      <button onclick="toggleCart()">open/close Cart</button>
+      
+      
     </header>
     
     <main>
       <div class="products">
         <!-- Product cards -->
-        <div class="product-card" onclick="addToCart('Product 1', 19.99)">
-          <img src="product1.jpg" alt="Product 1">
-          <h3>Product 1</h3>
-          <p>Description of Product 1.</p>
-          <p>$19.99</p>
+        <div class="product-card" onclick="addToCart('NICIP',43)">
+          <img src="https://images.apollo247.in/pub/media/catalog/product/N/I/NIC0015_1_1.jpg" alt="Product 1">
+          <h3>nicip(per strip)</h3>
+          <p>It is used to treat pain related to rheumatoid arthritis, osteoarthritis, post-operative pain, dental pain, pain associated with the nose, ear, and throat, and fever.</p>
+          <p>RS 43/STRIP</p>
           <button>Add to Cart</button>
         </div>
+        <div class="product-card" onclick="addToCart('CHESTON COLD',46)">
+          <img src="https://5.imimg.com/data5/SELLER/Default/2023/6/313919346/XE/LP/SS/129748724/cheston-cold-tablet.jpeg" alt="Product 1">
+          <h3>CHESTON COLD</h3>
+          <p> is primarily used to treat the common cold and allergy symptoms such as runny nose, blocked nose, sneezing, congestion, pain & fever.</p>
+          <p>46.75RS/STRIP</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product-card" onclick="addToCart('OMEE CAPSULE', 64)">
+          <img src="https://sanmeds.in/wp-content/uploads/2023/01/Omee-Capsule.jpg" alt="OMEE CAPSULE">
+          <h3>OMEE CAPSULE</h3>
+          <p>used in the treatment of heartburn and chest pain due to stomach acid reflux disease</p>
+          <p>64RS/strip</p>
+          <button>Add to Cart</button>
+      </div>
+      <div class="product-card" onclick="addToCart('PAN-D/STRIP', 210)">
+        <img src="https://onemg.gumlet.io/l_watermark_346,w_480,h_480/a_ignore,w_480,h_480,c_fit,q_auto,f_auto/esvbkca7gea2dkmi5asc.jpg" alt="PAN-D/STRIP">
+        <h3>PAN-D/STRIP</h3>
+        <p>an-D Capsule PR is a prescription medicine used to treat gastroesophageal reflux disease (Acid reflux), dyspepsia (indigestion), and gastritis. It helps treat the conditions by reducing the amount of acid in the stomach thereby relieving symptoms of acidity such as heartburn, stomach pain, or irritation.</p>
+        <p>210rs/strip</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card" onclick="addToCart('pan 40', 165)">
+      <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/91+2ghWgqcL._AC_UF1000,1000_QL80_.jpg" alt="pan 40">
+      <h3>pan 40</h3>
+      <p>Pan 40 Tablet is a Tablet manufactured by Aristo Pharmaceuticals. It is commonly used for the diagnosis or treatment of Gastro-esophageal reflux disease, Heartburn, Euophagus inflammation, Stomach ulcers</p>
+      <p>$165</p>
+      <button>Add to Cart</button>
+  </div>
+  <div class="product-card" onclick="addToCart('PANTOSEC DSR', 125)">
+    <img src="https://akmedicalhall.com/wp-content/uploads/2023/06/Pantosec-Dsr-1648122642-10081774-1.jpg.webp" alt="PANTOSEC DSR">
+    <h3>PANTOSEC DSR</h3>
+    <p>Pantosec D SR Capsule 15's is a widely used medicine to treat peptic ulcers and gastroesophageal reflux disease (GERD)</p>
+    <p>Price: $125</p>
+    <button>Add to Cart</button>
+  </div>
+  
+  <div class="product-card" onclick="addToCart('TELMIKIND-AMH', 95)">
+    <img src="https://magicpills.in/wp-content/uploads/2021/08/Telmikind-Amh-1568184963-10012532-1.jpg" alt="TELMIKIND-AMH">
+    <h3>TELMIKIND-AMH</h3>
+    <p>Telmikind-AMH Tablet is a combination of medicines used to treat hypertension (high blood pressure) when a single medication is not effective.</p>
+    <p>Price: $95</p>
+    <button>Add to Cart</button>
+  </div>
+  
+  <div class="product-card" onclick="addToCart('TELMIKIND 40', 43.26)">
+    <img src="https://images.apollo247.in/pub/media/catalog/product/T/E/TEL0079_1_1.jpg" alt="TELMIKIND 40">
+    <h3>TELMIKIND 40</h3>
+    <p>Telmikind 40 tablet is a blood pressure-lowering medicine. It is used for the treatment of high blood pressure.</p>
+    <p>Price: $43.26</p>
+    <button>Add to Cart</button>
+  </div>
+  
+  <!-- Include other products similarly -->
+  
+  <div class="product-card" onclick="addToCart('ZIFI CV 200 TABLET', 292)">
+    <img src="https://meds.myupchar.com/54000/open-uri20220401-20360-i37xeu" alt="ZIFI CV 200 TABLET">
+    <h3>ZIFI CV 200 TABLET</h3>
+    <p>Zifi CV 200 tablet is an antibiotic medicine. It is used for the treatment of severe infections of the urinary tract, lungs, throat, tonsils and skin caused by various organisms.</p>
+    <p>Price: $292</p>
+    <button>Add to Cart</button>
+  </div>
+  
+  <div class="product-card" onclick="addToCart('OTRIVIN OXY FAST RELIEF ADULT10ML', 106.48)">
+    <img src="https://images-cdn.ubuy.co.in/639dc21d43f1de2902139e84-otrivin-adult-nasal-spray-clears-blocked.jpg" alt="OTRIVIN OXY FAST RELIEF">
+    <h3>OTRIVIN OXY FAST RELIEF "ADULT"10ML</h3>
+    <p>Otrivin Adult Nasal Spray can be used by adults and adolescents 12 years and older, for the relief of nasal congestion due to common colds or other allergic rhinitis, sinusitis.</p>
+    <p>Price: $106.48</p>
+    <button>Add to Cart</button>
+  </div>
+  
+  <div class="product-card" onclick="addToCart('STAMLO-5 TABLET 30', 83.9)">
+    <img src="https://www.kauverymeds.com/uploads/product/main/1676284987_26417_0.jpg" alt="STAMLO-5 TABLET 30">
+    <h3>STAMLO-5 TABLET 30</h3>
+    <p>Stamlo 5 tablet is a blood pressure-lowering medicine. It is used for the treatment of high blood pressure.</p>
+    <p>Price: $83.9</p>
+    <button>Add to Cart</button>
+  </div>
+  
+  <div class="product-card" onclick="addToCart('STAMLO 2.5 TABLET-30 IN ONE STRIP', 60.1)">
+    <img src="https://5.imimg.com/data5/SELLER/Default/2023/12/365648218/IZ/WV/CY/190025939/stamlo-2-5-tablet-2-500x500.jpeg" alt="STAMLO 2.5 TABLET-30 IN ONE STRIP">
+    <h3>STAMLO 2.5 TABLET-30 IN ONE STRIP</h3>
+    <p>Stamlo 2.5 Tablet belongs to a class of medicines known as calcium channel blockers. It is used to treat high blood pressure (hypertension) and prevent angina (heart-related chest pain).</p>
+    <p>Price: $60.1</p>
+    <button>Add to Cart</button>
+  </div>
+  
+  <div class="product-card" onclick="addToCart('ROKO CAPSULE-10', 22.73)">
+    <img src="https://www.netmeds.com/images/product-v1/600x600/813447/roko_2mg_capsule_10s_0_0.jpg" alt="ROKO CAPSULE-10">
+    <h3>ROKO CAPSULE-10</h3>
+    <p>Roko capsule is used in the treatment of acute diarrhoea due to food poisoning. It is also used in the treatment of acute diarrhoea due to viral infections.</p>
+    <p>Price: $22.73</p>
+    <button>Add to Cart</button>
+  </div>
+  
+  <div class="product-card" onclick="addToCart('COMBIFLAM TABLET-20', 50.65)">
+    <img src="https://onemg.gumlet.io/l_watermark_346,w_480,h_480/a_ignore,w_480,h_480,c_fit,q_auto,f_auto/cropped/niowfyzxquufm1i2zqgo.jpg" alt="COMBIFLAM TABLET-20">
+    <h3>COMBIFLAM TABLET-20</h3>
+    <p>Combiflam Tablet contains two painkiller medicines. They work together to reduce pain, fever, and inflammation.</p>
+    <p>Price: $50.65</p>
+    <button>Add to Cart</button>
+  </div>
+  
+  <div class="product-card" onclick="addToCart('CROCIN ADVANCE 500MG TABLET', 19.93)">
+    <img src="https://onemg.gumlet.io/l_watermark_346,w_480,h_480/a_ignore,w_480,h_480,c_fit,q_auto,f_auto/d1b5d11ee8ba4b68a6a5c6f1c872dbfc.jpg" alt="CROCIN ADVANCE 500MG TABLET">
+    <h3>CROCIN ADVANCE 500MG TABLET</h3>
+    <p>Crocin Advance 500mg Tablet helps relieve pain and fever by blocking the release of certain chemical messengers responsible for fever and pain.</p>
+    <p>Price: $19.93</p>
+    <button>Add to Cart</button>
+  </div>
+  
         <!-- Add more product cards here -->
+      </div>
+      </div>
+  
       </div>
   
       <!-- Cart display -->
       <div class="cart" id="cartItems">
         <h2>Your Cart</h2>
         <ul id="cartList"></ul>
-        <p>Total: $<span id="cartTotal">0</span></p>
+        <p>Total(IF YOU SEE $ ASSUME IT AS RS): RS<span id="cartTotal">0</span></p>
         <button onclick="showUserInfoForm()">Place Order</button>
+        
       </div>
   
       <!-- User info form -->
@@ -40,11 +156,31 @@
             <input type="text" placeholder="Name" required><br>
             <input type="email" placeholder="Email" required><br>
             <input type="tel" placeholder="Phone Number" required><br>
+            <button type="button" onclick="hideUserInfoForm()">Cancel</button>
             <button type="submit">Submit Order</button>
+
           </form>
         </div>
       </div>
+      <!-- Inside your main section, above or below the product cards -->
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      
+
+
     </main>
+    
+      
+      <!-- Remaining content -->
+    
+    
     <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
