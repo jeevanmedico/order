@@ -1,4 +1,4 @@
- 
+  
     let cart = [];
     let cartTotal = 0;
 
@@ -40,7 +40,16 @@
       if (cart.length === 0) {
         alert("Your cart is empty. Please add items before placing an order.");
         return;
+
       }
+      function toggleCart() {
+        var cart = document.getElementById("cartItems");
+        if (cart.style.display === "none") {
+            cart.style.display = "block";
+        } else {
+            cart.style.display = "none";
+        }
+    }
 
       // Form data to be sent to Web3Forms
       const formData = {
@@ -74,12 +83,78 @@
         alert("An error occurred while submitting the order. Please try again later.");
       });
     }
-function addToCart(name, price) {
-  cart.push({ name, price });
-  cartTotal += price;
-  document.getElementById('cartList').innerHTML += `<li>${name} - $${price}</li>`;
-  document.getElementById('cartTotal').textContent = cartTotal.toFixed(2);
-
-  // Show the cart after adding an item
-  document.getElementById('cartItems').style.display = 'block';
-}
+    function addToCart(name, price) {
+        cart.push({ name, price });
+        cartTotal += price;
+        document.getElementById('cartList').innerHTML += `<li>${name} - $${price}</li>`;
+        document.getElementById('cartTotal').textContent = cartTotal.toFixed(2);
+      
+        // Display the cart by removing 'display: none' style
+        document.getElementById('cartItems').style.display = 'block';
+      }
+      window.addEventListener('scroll', function() {
+        const header = document.getElementById('mainHeader');
+        if (window.scrollY > 50) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+      function showUserInfoForm() {
+        const userInfoForm = document.getElementById('userInfoForm');
+        userInfoForm.style.display = 'flex';
+      }
+      
+      function hideUserInfoForm() {
+        const userInfoForm = document.getElementById('userInfoForm');
+        userInfoForm.style.display = 'none';
+      }
+      function showUserInfoForm() {
+        const userInfoForm = document.getElementById('userInfoForm');
+        userInfoForm.style.display = 'flex';
+        document.addEventListener('keydown', closeOnEscape);
+      }
+      
+      function hideUserInfoForm() {
+        const userInfoForm = document.getElementById('userInfoForm');
+        userInfoForm.style.display = 'none';
+        document.removeEventListener('keydown', closeOnEscape);
+      }
+      
+      function closeOnEscape(event) {
+        if (event.key === 'Escape') {
+          hideUserInfoForm();
+        }
+      }
+      function addToCart(name, price) {
+        cart.push({ name, price });
+        cartTotal += price;
+        document.getElementById('cartList').innerHTML += `<li>${name} - $${price} <button onclick="cancelItem('${name}', ${price})">Cancel</button></li>`;
+        document.getElementById('cartTotal').textContent = cartTotal.toFixed(2);
+      }
+      
+      function cancelItem(name, price) {
+        const itemIndex = cart.findIndex(item => item.name === name && item.price === price);
+        if (itemIndex !== -1) {
+          cartTotal -= price;
+          cart.splice(itemIndex, 1);
+          updateCartDisplay();
+        }
+      }
+      
+      function updateCartDisplay() {
+        const cartList = document.getElementById('cartList');
+        cartList.innerHTML = '';
+        cart.forEach(item => {
+          cartList.innerHTML += `<li>${item.name} - $${item.price} <button onclick="cancelItem('${item.name}', ${item.price})">Cancel</button></li>`;
+        });
+        document.getElementById('cartTotal').textContent = cartTotal.toFixed(2);
+      }
+      function toggleCart() {
+        var cart = document.getElementById("cartItems");
+        if (cart.style.display === "none") {
+            cart.style.display = "block";
+        } else {
+            cart.style.display = "none";
+        }
+    }
